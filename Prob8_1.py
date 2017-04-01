@@ -1,5 +1,8 @@
 f=open("D:\data.txt",'r')
-s=f.read()
+s=""
+for x in f.readlines():
+    s=s+x.strip()
+s=s.strip('')
 max=1
 for i in range(0,len(s)-12):
     ans=1
